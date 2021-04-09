@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-04-07 16:35:29
+ * @LastEditTime: 2021-04-07 16:56:00
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue3-test\src\router\index.js
+ */
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/Home.vue";
 
@@ -15,6 +23,12 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
+  },
+  {
+    path: "/test",
+    name: "Test",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Test.vue"),
   },
 ];
 
